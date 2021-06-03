@@ -4,10 +4,9 @@
 
 :root {
   --white-color: #fff;
-  --orange-color: #FF9900;
-  --light-black: #333333;
+  --orange-color: #FF5C00;
+  --black: #000;
   --light-gray: #CACACA;
-  --kit-orange: #E1670E;
 }
 
 @font-face {
@@ -40,4 +39,120 @@
   font-weight: 600;
   font-display: swap;
   font-style: normal;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  outline: none;
+  color: var(--black);
+}
+
+ul, ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.btn-reset {
+  border: none;
+  padding: 0;
+  outline: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.main-container {
+  width: 1300px;
+  margin: 0 auto;
+}
+
+.header {
+  width: 100%;
+  min-height: 60px;
+  padding: 21px 0;
+}
+
+.header__wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.header__logo {
+  margin-right: auto;
+}
+
+.header__phone {
+  font-weight: 600;
+}
+
+.header__btn--order {
+  margin-left: 30px;
+  padding: 15px 50px;
+  font-weight: 600;
+  color: var(--white-color);
+  background-color: var(--orange-color);
+}
+
+.header__btn--menu {
+  margin-left: 20px;
+  width: 35px;
+  height: 26px;
+  background-image: url(../img/burger.png);
+}
+
+.main__offer {
+  width: 100%;
+  padding: 222px 0;
+  background-image: url(../img/offerbg.jpg);
+}
+
+.offer__heading {
+  max-width: 550px;
+  font-weight: 700;
+  font-size: 2.67em;
+  margin-bottom: 38px;
+}
+
+.offer__item {
+  display: flex;
+  align-items: center;
+  padding-left: 50px;
+  min-height: 37px;
+  font-size: 1.34em;
+  font-weight: 400;
+  background-repeat: no-repeat;
+  /* background-size: contain; */
+}
+.offer__item:not(:last-child) {
+  margin-bottom: 12px;
+}
+
+.offer__item--one {
+  background-image: url(../img/icons/offerone.png);
+}
+
+.offer__item--two {
+  background-image: url(../img/icons/offertwo.png);
+}
+
+.offer__item--three {
+  background-image: url(../img/icons/offerthree.png);
+}
+
+.offer__btn {
+  margin-top: 57px;
+  padding: 28.5px 33px;
+  background-color: var(--orange-color);
+  font-weight: 600;
+  color: var(--white-color);
+  border-radius: 12px;
 }
