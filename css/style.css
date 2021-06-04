@@ -44,10 +44,16 @@
 body {
   font-family: 'Montserrat', sans-serif;
   font-size: 18px;
+  color: var(--black)
 }
 
 h1, h2, h3, h4, h5, h6, p {
   margin: 0;
+}
+
+h2 {
+  font-size: 2em;
+  font-weight: 500;
 }
 
 a {
@@ -111,7 +117,8 @@ ul, ol {
 
 .main__offer {
   width: 100%;
-  padding: 222px 0;
+  padding-top: 222px;
+  padding-bottom: 400px;
   background-image: url(../img/offerbg.jpg);
 }
 
@@ -130,7 +137,6 @@ ul, ol {
   font-size: 1.34em;
   font-weight: 400;
   background-repeat: no-repeat;
-  /* background-size: contain; */
 }
 .offer__item:not(:last-child) {
   margin-bottom: 12px;
@@ -155,4 +161,63 @@ ul, ol {
   font-weight: 600;
   color: var(--white-color);
   border-radius: 12px;
+}
+
+.select-goods {
+  background-color: #eeeeee;
+}
+
+.select-goods__wrapper {
+  padding-top: 100px;
+}
+
+.select-goods__heading {
+  margin-bottom: 30px;
+}
+
+.select-goods__items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.select-goods__item {
+  display: flex;
+  align-items: flex-start;
+  padding-top: 45px;
+  padding-left: 37px;
+  padding-bottom: 94px;
+  box-shadow: 0px 0px 35px rgba(0, 0, 0, 0.1);
+  background-color: var(--white-color);
+}
+
+.select-goods__item:not(:last-child) {
+  min-width: 643px;
+  margin-bottom: 11px;
+}
+
+.good-item__img {
+  margin-right: 40px;
+}
+
+.good-item__headings {
+  font-weight: 600;
+  max-width: 132px;
+  line-height: 32px;
+  margin-bottom: 40px;
+}
+
+.good-item__headings--size {
+  margin-bottom: 124px;
+}
+
+.good-item__button {
+  padding: 17px 52px;
+  color: var(--white-color);
+  background-color: var(--orange-color);
+  border-radius: 12px;
+}
+
+.select-goods__item:last-child {
+  width: 100%;
 }
