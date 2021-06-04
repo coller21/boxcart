@@ -68,9 +68,103 @@
             </div>
           </li>
           <li class="select-goods__item">
-            <img src="img/calcimg.jpg" alt="">
+            <img src="img/calcimg.jpg" alt="" class="select-goods__top-image">
+            <div class="size__wrapper">
+              <div class="select-goods__conf-wrapper">
+                <div class="label-wrapper">
+                  <label for="width" class="label">Ширина</label>
+                  <input id="width" type="number" class="select-goods__select-sizes">
+                </div>
+                <div class="label-wrapper">
+                  <label for="height" class="label">Высота</label>
+                  <input id="height" type="number" class="select-goods__select-sizes">
+                </div>
+                <div class="label-wrapper">
+                  <label for="depth" class="label">Глубина</label>
+                  <input id="depth" type="number" class="select-goods__select-sizes">
+                </div>
+              </div>
+              <p class="label">Цвет роллет</p>
+              <ul class="select-goods__select-colors">
+                <li class="good__color good__color--one"></li>
+                <li class="good__color good__color--two"></li>
+                <li class="good__color good__color--three"></li>
+                <li class="good__color good__color--four"></li>
+                <li class="good__color good__color--five"></li>
+                <li class="good__color good__color--six good__color--active"></li>
+                <li class="good__color good__color--seven"></li>
+              </ul>
+              <div class="select-goods__contacts">
+                <input type="text" class="contact__input" placeholder="Имя">
+                <input type="text" class="contact__input" placeholder="Телефон">
+                <button class="btn-reset good-item__button button__send">Отправить</button>
+              </div>
+              <div class="roll"></div>
+            </div>
           </li>
         </ul>
+      </div>
+    </section>
+    <section class="main-advantages advantages">
+      <div class="main-container">
+        <h2 class="advantages__heading h2-headings">
+          Почему стоит обратиться к нам?
+        </h2>
+        <ul class="advantages__ilems">
+          <li class="advantages__item advantages__item--one">Собственное производство</li>
+          <li class="advantages__item advantages__item--two">Бесплатный замер</li>
+          <li class="advantages__item advantages__item--three">Изготовление 10 раб. дней</li>
+          <li class="advantages__item advantages__item--four">Широкий выбор размеров и цветов</li>
+          <li class="advantages__item advantages__item--five">Помощь в согласовании установки с ук жилого комплекса</li>
+        </ul>
+      </div>
+    </section>
+    <section class="main__aboutus aboutus">
+      <div class="main-container">
+        <ul class="aboutus__items">
+          <li class="aboutus__item aboutus__item--active">
+            <h2 class="aboutus__heading h2-headings">
+              О нас
+            </h2>
+          </li>
+          <li class="aboutus__item ">
+            <h2 class="aboutus__heading h2-headings">
+              Сертификаты и разрешения
+            </h2>
+          </li>
+        </ul>
+        <div class="aboutus__content-wrapper">
+          <div class="aboutus__contenet-left">
+            <strong class="aboutus__contenet-left--heading">
+              Роллетные и металлические шкафы под заказ
+            </strong>
+            <p class="aboutus__contenet-left--text">
+              Эскиз, который наши конструктора
+              создают на основе выполненных замеров,
+              стандартных вариантов и ваших
+              пожеланий, после согласования с Вами
+              превращается в рабочую конструкторскую
+              документацию. После чего элементы
+              конструкции шкафа изготавливаются
+              на современном оборудовании.
+            </p>
+          </div>
+          <div class="aboutus__contenet-right"></div>
+        </div>
+      </div>
+    </section>
+    <section class="main-measurer measurer">
+      <div class="measurer__wrapper main-container">
+        <!-- <div class="man"></div> -->
+        <form action="" class="measurer__form">
+          <strong class="measurer__heading">
+            Оставьте заявку
+            на&nbsp;<span class="orange">бесплатный вызов замерщика</span>
+          </strong>
+          <input type="text" placeholder="Имя" class="measurer__input">
+          <input type="tel" placeholder="Телефон" class="measurer__input">
+          <button class="btn-reset measurer__btn">Вызвать замерщика</button>
+        </form>
       </div>
     </section>
   </main>
