@@ -5,7 +5,12 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+    integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
   <link rel="stylesheet" href="css/style.css">
   <title>Системы хранения | PARKING BOX</title>
 </head>
@@ -153,7 +158,7 @@
         </div>
       </div>
     </section>
-    <section class="main-measurer measurer">
+    <section class="main__measurer measurer">
       <div class="measurer__wrapper main-container">
         <!-- <div class="man"></div> -->
         <form action="" class="measurer__form">
@@ -167,7 +172,167 @@
         </form>
       </div>
     </section>
+    <section class="main-questions questions">
+      <div class="questions__wrapper main-container">
+        <h2 class="questions__heading h2-headings">
+          Ответы на часто задаваемые вопросы
+        </h2>
+        <div class="accordion">
+          <div class="accordion-item">
+            <div class="accordion-header">Шкафы имеют сборно-разборную конструкцию?</div>
+            <div class="accordion-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta omnis ipsum
+              earum sint, aliquam nobis
+              quas officia repellendus iure. Incidunt?</div>
+          </div>
+          <div class="accordion-item">
+            <div class="accordion-header">Можно ли выбрать цвет шкафа?</div>
+            <div class="accordion-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta omnis ipsum
+              earum sint, aliquam nobis
+              quas officia repellendus iure. Incidunt?</div>
+          </div>
+          <div class="accordion-item">
+            <div class="accordion-header">Какой вариант открывания шкафа выбрать?</div>
+            <div class="accordion-text">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta omnis ipsum
+              earum sint, aliquam nobis quas officia repellendus iure. Incidunt?
+            </div>
+          </div>
+          <div class="accordion-item">
+            <div class="accordion-header">Сколько стоит вызов замерщика, и можно ли самому снимать размеры для будущего
+              шкафа?</div>
+            <div class="accordion-text">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta omnis ipsum
+              earum sint, aliquam nobis quas officia repellendus iure. Incidunt?
+            </div>
+          </div>
+          <div class="accordion-item">
+            <div class="accordion-header">Насколько надежно можно закрыть шкаф, на лестничной клетке или на парковке?
+            </div>
+            <div class="accordion-text">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta omnis ipsum
+              earum sint, aliquam nobis quas officia repellendus iure. Incidunt?
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="main__ourworks ourworks">
+      <div class="ourworks__wrapper main-container">
+        <h2 class="ourworks__heading h2-headings">
+          Примеры наших работ
+        </h2>
+        <ul class="ourworks__items">
+          <li class="ourworks__item"></li>
+          <li class="ourworks__item"></li>
+          <li class="ourworks__item"></li>
+          <li class="ourworks__item"></li>
+          <li class="ourworks__item"></li>
+          <li class="ourworks__item"></li>
+          <li class="ourworks__item"></li>
+        </ul>
+      </div>
+    </section>
+    <section class="main__reviews reviews">
+      <div class="reviews__wpapper main-container">
+        <h2 class="reviews__heading h2-headings">
+          Отзывы наших довольных клиентов
+        </h2>
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="swiper-slide__card reviews-card">
+                <img src="img/client.jpg" alt="Александр" class="reviews-card__img">
+                <div class="reviews-card__text">
+                  <strong class="reviews-card__name">Александр</strong>
+                  Давно мечтал установить роллетный шкаф
+                  на парковку, чтобы разгрузить лоджию
+                  от предметов которыми редко пользуемся.
+                  Обратился в компанию “Perking Box” и
+                  остался доволне. Всем советую!
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="swiper-slide__card reviews-card">
+                <img src="img/client.jpg" alt="Александр" class="reviews-card__img">
+                <div class="reviews-card__text">
+                  <strong class="reviews-card__name">Александр</strong>
+                  Давно мечтал установить роллетный шкаф
+                  на парковку, чтобы разгрузить лоджию
+                  от предметов которыми редко пользуемся.
+                  Обратился в компанию “Perking Box” и
+                  остался доволне. Всем советую!
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="swiper-slide__card reviews-card">
+                <img src="img/client.jpg" alt="Александр" class="reviews-card__img">
+                <div class="reviews-card__text">
+                  <strong class="reviews-card__name">Александр</strong>
+                  Давно мечтал установить роллетный шкаф
+                  на парковку, чтобы разгрузить лоджию
+                  от предметов которыми редко пользуемся.
+                  Обратился в компанию “Perking Box” и
+                  остался доволне. Всем советую!
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="swiper-slide__card reviews-card">
+                <img src="img/client.jpg" alt="Александр" class="reviews-card__img">
+                <div class="reviews-card__text">
+                  <strong class="reviews-card__name">Александр</strong>
+                  Давно мечтал установить роллетный шкаф
+                  на парковку, чтобы разгрузить лоджию
+                  от предметов которыми редко пользуемся.
+                  Обратился в компанию “Perking Box” и
+                  остался доволне. Всем советую!
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+      </div>
+    </section>
   </main>
+  <footer class="footer">
+    <section class="footer__top topfooter">
+
+    </section>
+  </footer>
+  <script>
+    $('.accordion').accordion({
+      heightStyle: 'content',
+      header: '> .accordion-item > .accordion-header',
+      active: true
+    });
+  </script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script>
+    var swiper = new Swiper(".swiper-container", {
+      slidesPerView: 2,
+      direction: getDirection(),
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev"
+      },
+      on: {
+        resize: function () {
+          swiper.changeDirection(getDirection());
+        }
+      }
+    });
+
+    function getDirection() {
+      var windowWidth = window.innerWidth;
+      var direction = window.innerWidth <= 760 ? "vertical" : "horizontal";
+
+      return direction;
+    }
+  </script>
 </body>
 
 </html>
