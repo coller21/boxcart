@@ -9,8 +9,11 @@
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
     integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+  <script src="js/bootstrap.bundle.min.js" defer></script>
+  <script src="js/script.js" defer></script>
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/style.css">
   <title>Системы хранения | PARKING BOX</title>
 </head>
@@ -22,8 +25,25 @@
         <img src="img/logo.png" alt="PARKING BOX">
       </a>
       <a href="tel:+78004553454" class="header__phone">8 800 455 34 54</a>
-      <button class="btn-reset header__btn--order">Сделать заказ</button>
-      <button class="btn-reset header__btn--menu"></button>
+      <button type="button" class="btn-reset header__btn--order" data-bs-toggle="modal"
+        data-bs-target="#sendOrder">Сделать заказ</button>
+      <button class="btn-reset header__btn--menu" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop"
+        aria-controls="offcanvasTop"></button>
+    </div>
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+      <div class="offcanvas-header">
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="modal-menu-items">
+          <li class="modal-menu-item"><a href="#" class="modal-menu-links">Выбрать шкаф</a></li>
+          <li class="modal-menu-item"><a href="#" class="modal-menu-links">преимущества</a></li>
+          <li class="modal-menu-item"><a href="#" class="modal-menu-links">о компании</a></li>
+          <li class="modal-menu-item"><a href="#" class="modal-menu-links">Чаво</a></li>
+          <li class="modal-menu-item"><a href="#" class="modal-menu-links">наши работы</a></li>
+          <li class="modal-menu-item"><a href="#" class="modal-menu-links">контакты</a></li>
+        </ul>
+      </div>
     </div>
   </header>
   <main class="main">
@@ -37,7 +57,9 @@
           <li class="offer__item offer__item--two">Широкий выбор цвета</li>
           <li class="offer__item offer__item--three">Бесплатный замер</li>
         </ul>
-        <button class="btn-reset offer__btn">Вызвать замерщика бесплатно</button>
+        <button class="btn-reset offer__btn" data-bs-toggle="modal" data-bs-target="#sendOrder">
+          Вызвать замерщика бесплатно
+        </button>
       </div>
     </section>
     <section class="main__select-goods select-goods">
@@ -91,13 +113,13 @@
               </div>
               <p class="label">Цвет роллет</p>
               <ul class="select-goods__select-colors">
-                <li class="good__color good__color--one"></li>
-                <li class="good__color good__color--two"></li>
-                <li class="good__color good__color--three"></li>
-                <li class="good__color good__color--four"></li>
-                <li class="good__color good__color--five"></li>
-                <li class="good__color good__color--six good__color--active"></li>
-                <li class="good__color good__color--seven"></li>
+                <li class="good__color good__color--one" data-link="img/1.png"></li>
+                <li class="good__color good__color--two" data-link="img/2.png"></li>
+                <li class="good__color good__color--three" data-link="img/3.png"></li>
+                <li class="good__color good__color--four" data-link="img/4.png"></li>
+                <li class="good__color good__color--five" data-link="img/5.png"></li>
+                <li class="good__color good__color--six" data-link="img/6.png"></li>
+                <li class="good__color good__color--seven" data-link="img/7.png"></li>
               </ul>
               <div class="select-goods__contacts">
                 <input type="text" class="contact__input" placeholder="Имя">
@@ -299,8 +321,80 @@
     </section>
   </main>
   <footer class="footer">
-    <section class="footer__top topfooter">
-
+    <div class="footer__wrapper main-container">
+      <section class="first__column">
+        <a href="index.html" class="footer__logo">
+          <img src="img/logo.png" alt="PARKING BOX">
+        </a>
+        <strong>Мы находимся</strong>
+        <address class="footer__adress">
+          344011, г.Ростов-на-Дону, пер.Гвардейский, д.&nbsp;18
+        </address>
+        <strong>Мы в соц. сетях</strong>
+        <ul class="footer-social__items">
+          <li class="footer-social__item"></li>
+          <li class="footer-social__item"></li>
+          <li class="footer-social__item"></li>
+          <li class="footer-social__item"></li>
+        </ul>
+      </section>
+      <section class="second__column">
+        <p class="footer__tel">Телефон горячей линии</p>
+        <a href="tel:+78004560000" class="footer__tel--link">8 800 456 00 00</a>
+      </section>
+      <section class="third__column">
+        <p class="footer__mail">Пишите нам</p>
+        <a href="mailto:info@parkingbox-rf.ru" class="footer__mail--link">info@parkingbox-rf.ru</a>
+        <strong>Покупателю</strong>
+        <ul class="bayer__links">
+          <li class="bayer__link">
+            <a href="#" class="bayer__link--link">
+              Оплата
+            </a>
+          </li>
+          <li class="bayer__link">
+            <a href="#" class="bayer__link--link">
+              Доставка
+            </a>
+          </li>
+          <li class="bayer__link">
+            <a href="#" class="bayer__link--link">
+              Пользовательское соглашение
+            </a>
+          </li>
+        </ul>
+      </section>
+      <section class="fourth__column">
+        <strong>Информация</strong>
+        <ul class="info__links">
+          <li class="info__link">
+            <a href="#" class="info__link--link">
+              О компании
+            </a>
+          </li>
+          <li class="info__link">
+            <a href="#" class="info__link--link">
+              Политика сайта
+            </a>
+          </li>
+          <li class="info__link">
+            <a href="#" class="info__link--link">
+              Реквизиты
+            </a>
+          </li>
+          <li class="info__link">
+            <a href="#" class="info__link--link">
+              Сотрудничество
+            </a>
+          </li>
+        </ul>
+      </section>
+    </div>
+    <section class="footer_copyright copyright">
+      <div class="copyright__wrapper main-container">
+        <p class="copyright__text">Parking Box © 2021 ВСЕ ПРАВА ЗАЩИЩЕНЫ</p>
+        <p class="copyright__text">Сделано в TSV Digital x Branding</p>
+      </div>
     </section>
   </footer>
   <script>
@@ -333,6 +427,27 @@
       return direction;
     }
   </script>
+  <!-- Modal -->
+  <div class="modal fade" id="sendOrder" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content m-content">
+        <div class="modal-header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body body__modal">
+          <p class="modal__text">
+            Заполните форму и мы свяжемся
+            с Вами в течении 15 минут
+          </p>
+          <form action="#">
+            <input type="text" class="modal__input" placeholder="Имя">
+            <input type="tel" class="modal__input" placeholder="Телефон">
+            <input type="submit" value="Вызвать замерщика бесплатно" class="btn-reset modal-button">
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
 
 </html>
