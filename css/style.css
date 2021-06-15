@@ -723,6 +723,10 @@ ul, ol {
   background-color: #EFEFEF;
 }
 
+.footer-social__item--inst {
+  background: url(../img/inst.png) no-repeat;
+}
+
 .footer-social__item:not(:last-child) {
   margin-right: 18px;
 }
