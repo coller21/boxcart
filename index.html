@@ -50,7 +50,7 @@
     <section class="main__offer offer">
       <div class="offer__wrapper main-container">
         <h1 class="offer__heading">
-          Роллетные шкафы от производителя
+          Роллетные шкафы от&nbsp;производителя
         </h1>
         <ul class="offer__items">
           <li class="offer__item offer__item--one">Защита от взлома</li>
@@ -156,7 +156,7 @@
           </li>
           <li class="aboutus__item ">
             <h2 class="aboutus__heading h2-headings">
-              Сертификаты и разрешения
+              Сертификаты
             </h2>
           </li>
         </ul>
@@ -419,9 +419,13 @@
         }
       }
     });
-
+    var swiper = new Swiper(".mySwiper", {
+        watchSlidesProgress: true,
+        watchSlidesVisibility: true,
+        slidesPerView: 3,
+      });
     function getDirection() {
-      var windowWidth = window.innerWidth;
+      // var windowWidth = window.innerWidth;
       var direction = window.innerWidth <= 760 ? "vertical" : "horizontal";
 
       return direction;
