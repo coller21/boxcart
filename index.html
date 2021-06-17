@@ -5,14 +5,14 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
     integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
   <script src="js/bootstrap.bundle.min.js" defer></script>
   <script src="js/script.js" defer></script>
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/slick-theme.css">
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/style.css">
   <title>Системы хранения | PARKING BOX</title>
@@ -98,29 +98,34 @@
             <img src="img/calcimg.jpg" alt="" class="select-goods__top-image">
             <div class="size__wrapper">
               <div class="select-goods__conf-wrapper">
-                <div class="label-wrapper">
-                  <label for="width" class="label">Ширина</label>
-                  <input id="width" type="number" class="select-goods__select-sizes">
+                <div>
+                  <p class="label">Цвет роллет</p>
+                  <ul class="select-goods__select-colors">
+                    <li class="good__color good__color--one" data-link="img/1.png"></li>
+                    <li class="good__color good__color--two" data-link="img/2.png"></li>
+                    <li class="good__color good__color--three" data-link="img/3.png"></li>
+                    <li class="good__color good__color--four" data-link="img/4.png"></li>
+                    <li class="good__color good__color--five" data-link="img/5.png"></li>
+                    <li class="good__color good__color--six" data-link="img/6.png"></li>
+                    <li class="good__color good__color--seven" data-link="img/7.png"></li>
+                  </ul>
                 </div>
-                <div class="label-wrapper">
-                  <label for="height" class="label">Высота</label>
-                  <input id="height" type="number" class="select-goods__select-sizes">
-                </div>
-                <div class="label-wrapper">
-                  <label for="depth" class="label">Глубина</label>
-                  <input id="depth" type="number" class="select-goods__select-sizes">
+                <div class="sizes__color">
+                  <div class="label-wrapper">
+                    <label for="width" class="label">Ширина</label>
+                    <input id="width" type="number" class="select-goods__select-sizes">
+                  </div>
+                  <div class="label-wrapper">
+                    <label for="height" class="label">Высота</label>
+                    <input id="height" type="number" class="select-goods__select-sizes">
+                  </div>
+                  <div class="label-wrapper">
+                    <label for="depth" class="label">Глубина</label>
+                    <input id="depth" type="number" class="select-goods__select-sizes">
+                  </div>
                 </div>
               </div>
-              <p class="label">Цвет роллет</p>
-              <ul class="select-goods__select-colors">
-                <li class="good__color good__color--one" data-link="img/1.png"></li>
-                <li class="good__color good__color--two" data-link="img/2.png"></li>
-                <li class="good__color good__color--three" data-link="img/3.png"></li>
-                <li class="good__color good__color--four" data-link="img/4.png"></li>
-                <li class="good__color good__color--five" data-link="img/5.png"></li>
-                <li class="good__color good__color--six" data-link="img/6.png"></li>
-                <li class="good__color good__color--seven" data-link="img/7.png"></li>
-              </ul>
+
               <div class="select-goods__contacts">
                 <input type="text" class="contact__input" placeholder="Имя">
                 <input type="text" class="contact__input" placeholder="Телефон">
@@ -254,68 +259,91 @@
         </ul>
       </div>
     </section>
+    <section class="mobile-ourworks">
+      <div class="ourworks__wrapper main-container">
+        <h2 class="ourworks__heading h2-headings">
+          Примеры наших работ
+        </h2>
+        <section class="regular slider">
+          <div>
+            <img src="http://placehold.it/350x300?text=1">
+          </div>
+          <div>
+            <img src="http://placehold.it/350x300?text=2">
+          </div>
+          <div>
+            <img src="http://placehold.it/350x300?text=3">
+          </div>
+          <div>
+            <img src="http://placehold.it/350x300?text=4">
+          </div>
+          <div>
+            <img src="http://placehold.it/350x300?text=5">
+          </div>
+          <div>
+            <img src="http://placehold.it/350x300?text=6">
+          </div>
+        </section>
+      </div>
+    </section>
     <section class="main__reviews reviews">
       <div class="reviews__wpapper main-container">
         <h2 class="reviews__heading h2-headings">
           Отзывы наших довольных клиентов
         </h2>
-        <div class="swiper-container">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <div class="swiper-slide__card reviews-card">
-                <img src="img/client.jpg" alt="Александр" class="reviews-card__img">
-                <div class="reviews-card__text">
-                  <strong class="reviews-card__name">Александр</strong>
-                  Давно мечтал установить роллетный шкаф
-                  на парковку, чтобы разгрузить лоджию
-                  от предметов которыми редко пользуемся.
-                  Обратился в компанию “Perking Box” и
-                  остался доволне. Всем советую!
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="swiper-slide__card reviews-card">
-                <img src="img/client.jpg" alt="Александр" class="reviews-card__img">
-                <div class="reviews-card__text">
-                  <strong class="reviews-card__name">Александр</strong>
-                  Давно мечтал установить роллетный шкаф
-                  на парковку, чтобы разгрузить лоджию
-                  от предметов которыми редко пользуемся.
-                  Обратился в компанию “Perking Box” и
-                  остался доволне. Всем советую!
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="swiper-slide__card reviews-card">
-                <img src="img/client.jpg" alt="Александр" class="reviews-card__img">
-                <div class="reviews-card__text">
-                  <strong class="reviews-card__name">Александр</strong>
-                  Давно мечтал установить роллетный шкаф
-                  на парковку, чтобы разгрузить лоджию
-                  от предметов которыми редко пользуемся.
-                  Обратился в компанию “Perking Box” и
-                  остался доволне. Всем советую!
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="swiper-slide__card reviews-card">
-                <img src="img/client.jpg" alt="Александр" class="reviews-card__img">
-                <div class="reviews-card__text">
-                  <strong class="reviews-card__name">Александр</strong>
-                  Давно мечтал установить роллетный шкаф
-                  на парковку, чтобы разгрузить лоджию
-                  от предметов которыми редко пользуемся.
-                  Обратился в компанию “Perking Box” и
-                  остался доволне. Всем советую!
-                </div>
+        <div class="regular slider">
+          <div class="swiper-slide">
+            <div class="swiper-slide__card reviews-card">
+              <img src="img/client.jpg" alt="Александр" class="reviews-card__img">
+              <div class="reviews-card__text">
+                <strong class="reviews-card__name">Александр</strong>
+                Давно мечтал установить роллетный шкаф
+                на парковку, чтобы разгрузить лоджию
+                от предметов которыми редко пользуемся.
+                Обратился в компанию “Perking Box” и
+                остался доволне. Всем советую!
               </div>
             </div>
           </div>
-          <div class="swiper-button-next"></div>
-          <div class="swiper-button-prev"></div>
+          <div class="swiper-slide">
+            <div class="swiper-slide__card reviews-card">
+              <img src="img/client.jpg" alt="Александр" class="reviews-card__img">
+              <div class="reviews-card__text">
+                <strong class="reviews-card__name">Александр</strong>
+                Давно мечтал установить роллетный шкаф
+                на парковку, чтобы разгрузить лоджию
+                от предметов которыми редко пользуемся.
+                Обратился в компанию “Perking Box” и
+                остался доволне. Всем советую!
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="swiper-slide__card reviews-card">
+              <img src="img/client.jpg" alt="Александр" class="reviews-card__img">
+              <div class="reviews-card__text">
+                <strong class="reviews-card__name">Александр</strong>
+                Давно мечтал установить роллетный шкаф
+                на парковку, чтобы разгрузить лоджию
+                от предметов которыми редко пользуемся.
+                Обратился в компанию “Perking Box” и
+                остался доволне. Всем советую!
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="swiper-slide__card reviews-card">
+              <img src="img/client.jpg" alt="Александр" class="reviews-card__img">
+              <div class="reviews-card__text">
+                <strong class="reviews-card__name">Александр</strong>
+                Давно мечтал установить роллетный шкаф
+                на парковку, чтобы разгрузить лоджию
+                от предметов которыми редко пользуемся.
+                Обратился в компанию “Perking Box” и
+                остался доволне. Всем советую!
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -333,9 +361,9 @@
         <strong>Мы в соц. сетях</strong>
         <ul class="footer-social__items">
           <li class="footer-social__item footer-social__item--inst"></li>
+          <!-- <li class="footer-social__item"></li>
           <li class="footer-social__item"></li>
-          <li class="footer-social__item"></li>
-          <li class="footer-social__item"></li>
+          <li class="footer-social__item"></li> -->
         </ul>
       </section>
       <section class="second__column">
@@ -401,35 +429,33 @@
     $('.accordion').accordion({
       heightStyle: 'content',
       header: '> .accordion-item > .accordion-header',
-      active: true
+      active: true,
+      collapsible: true
     });
   </script>
-  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-  <script>
-    var swiper = new Swiper(".swiper-container", {
-      slidesPerView: 2,
-      direction: getDirection(),
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev"
-      },
-      on: {
-        resize: function () {
-          swiper.changeDirection(getDirection());
-        }
-      }
-    });
-    var swiper = new Swiper(".mySwiper", {
-        watchSlidesProgress: true,
-        watchSlidesVisibility: true,
-        slidesPerView: 3,
-      });
-    function getDirection() {
-      // var windowWidth = window.innerWidth;
-      var direction = window.innerWidth <= 760 ? "vertical" : "horizontal";
+  <script src="js/slick.js"></script>
+  <script type="text/javascript">
+    $(document).on('ready', function () {
 
-      return direction;
-    }
+      $(".regular").slick({
+        // dots: true,
+        infinite: false,
+        slidesToShow: 2,
+        slidesToScroll: 2,
+        responsive: [
+          {
+            breakpoint: 760,
+            settings: {
+              dots: true,
+              infinite: false,
+              arrows: false,
+              centerMode: false,
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          }]
+      });
+    });
   </script>
   <!-- Modal -->
   <div class="modal fade" id="sendOrder" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
